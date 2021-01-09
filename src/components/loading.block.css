@@ -1,0 +1,14 @@
+@keyframes spin {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.spinner {
+  display: flex;
+}
+
+.loading {
+  animation: spin 1s linear infinite;
+  margin: 0 !important;
+}
