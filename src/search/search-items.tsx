@@ -2,10 +2,25 @@ import React from 'react';
 
 import './search.css';
 
-const SearchItem = () => {
+type Props = {
+  description: string;
+  name: string;
+  id: string;
+  language: string;
+};
+
+const SearchItem = (props: Props) => {
+  const { description, name, id, language } = props;
+
   return (
-    <div>
-      <p>Search</p>
+    <div className="search-item" key={id}>
+      <b>{name}</b>
+      <div>
+        Language: <b>{language}</b>
+      </div>
+      <div>
+        Description: <b>{description}</b>
+      </div>
     </div>
   );
 };

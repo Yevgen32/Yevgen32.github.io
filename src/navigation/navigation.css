@@ -1,0 +1,32 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border-bottom: 1px solid #fef5ca;
+    background: #4d5055;
+
+    @media (max-width: 600px) {
+        flex-direction: column;
+    }
+}
+
+.logo img {
+    width: 362px;
+}
+
+.other-links {
+
+}
+
+.menu-link {
+    color: #fef5ca;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.menu-link:hover {
+    color:white;
+
+}

@@ -1,3 +1,48 @@
-.container {
+.search-container {
     display: flex;
+    margin-top: 14px;
+}
+
+.search-input {
+    border-radius: 20px;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    margin-top: 14px;
+}
+
+.search-list {
+    margin-left: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.search-history-wrapper {
+    color: white;
+    font-weight: bold;
+}
+
+.search-history-item {
+    padding: 0 0 6px 0;
+}
+
+.search-item {
+    height: 96px;
+    width: calc(50% - 28px);
+    background: white;
+    padding: 10px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+}
+
+.message-info {
+    background: goldenrod;
+    color: white;
+    font-weight: bold;
+    padding: 16px;
+    border-radius: 8px;
+    height: max-content;
 }

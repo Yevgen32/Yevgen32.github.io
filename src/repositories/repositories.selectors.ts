@@ -1,5 +1,4 @@
 
-export const selectRepositories = (state: any) => {
-    console.log("selectRepositories -> state", state)
-    return state;
-}
+import type { ReduxState } from "../store/state.types"
+
+export const repositoriesSelector = (state: ReduxState): Array<{ description: string; full_name: string; id: string; language: string }> => state.repositories;
